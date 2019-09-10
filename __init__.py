@@ -5,9 +5,11 @@ from subscribie.auth import login_required
 
 module_iframe_embed = Blueprint('iframe_embed', __name__, template_folder='templates')
 
+@module_iframe_embed.route('/iframe_embed/index') # Define a module index page
 @module_iframe_embed.route('/show-iframe-embed')
 @login_required
 def get_iframe_embed():
+  """Set optimised title tags for your pages."""
   iframe = '''
         <iframe src={} width="100%" height="800px" scrolling="auto"
                 allowfullscreen="true"
