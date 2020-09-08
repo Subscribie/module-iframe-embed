@@ -13,7 +13,6 @@
   <div class="container">
     <nav class="breadcrumb" aria-label="breadcrumbs">
       <ul>
-        <p>You're here: </p>
         <li><a href="{{ url_for("admin.dashboard") }}">Dashboard</a></li>
         <li class="is-active"><a href="#" aria-current="page">iFrame Embed Code</a></li>
       </ul>
@@ -36,9 +35,7 @@
         </p>
         <p>Copy the embed code into your website:</p>
         <br />
-        <textarea rows="10" cols="40" autocomplete="off" autocapitalize="none">
-          {{ iframe }}
-        </textarea>
+        <textarea rows="10" cols="40" autocomplete="off" autocapitalize="none">{{ iframe }}</textarea>
 
       </div>
       <div class="is-divider-vertical"></div>
